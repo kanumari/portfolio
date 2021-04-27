@@ -15,6 +15,13 @@ body {
 .light .triangle path {
     fill: #D40000;
     }
+.light .social,
+.light .steps-item {
+    border-bottom: 1px solid #010101;
+}
+.light .steps-item:first-child {
+    border-top: 1px solid #010101;
+}
 .dark {
     background-color: #232326;
     color: #F3F2F0;
@@ -28,6 +35,13 @@ fill: #D40000;
 .dark .triangle path {
     fill: #FFFFFF;
     }
+.dark .social,
+.dark .steps-item {
+    border-bottom: 1px solid #F3F2F0;
+}
+.dark .steps-item:first-child {
+    border-top: 1px solid #F3F2F0;
+}
 .wrapper {
     width: 100%;
     max-width: 1140px;
@@ -109,6 +123,7 @@ display: none;
     justify-content: space-between;
     padding-bottom: 60px;
     margin-top: 100px;
+    border-bottom: 1px solid #F3F2F0;
 }
 .social-item:last-child {
     position: relative;
@@ -130,9 +145,10 @@ display: none;
 .skill {
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
 }
 .skill-item {
-    flex: 0 0 24%;
+    flex: 0 0 21%;
 }
 .skill .title-h3 {
     text-transform: uppercase;
@@ -149,6 +165,8 @@ display: none;
     justify-content: space-between;
     align-items: center;
     line-height: 150%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .steps-title {
     font-size: 28px;
@@ -158,6 +176,8 @@ display: none;
 }
 .steps-description {
     font-size: 16px;
+    flex: 0 0 49%;
+    max-width: 49%;
 }
 .circle-main {
     width: 253px;
