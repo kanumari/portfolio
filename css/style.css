@@ -398,6 +398,7 @@ padding-bottom: 21px;
 }
 .section-advantages {
     padding-top: 154px;
+    padding-bottom: 218px;
 }
 .advantages-text {
     font-size: 28px;
@@ -436,4 +437,29 @@ padding-bottom: 21px;
     line-height: 150%;
     opacity: 0.8;
     margin-top: 0;
+}
+.tech {
+    display: grid;
+    text-align: center;
+    grid-template: 148px 148px / repeat(4, 1fr);
+}
+.tech-item {
+    border-bottom: 1px solid rgba(243, 242, 240, 0.3);
+    border-right: 1px solid rgba(243, 242, 240, 0.3);
+    justify-content: center;
+    display: flex;
+}
+.tech-item:first-child,
+.tech-item:nth-child(5) {
+    border-left: 1px solid rgba(243, 242, 240, 0.3);
+}
+.html, .css, .js, .jquery {
+    border-top: 1px solid rgba(243, 242, 240, 0.3); 
+}
+.tech-image {
+    filter: grayscale(100%);
+    transition: 0.2s ease;
+}
+.tech-item:hover .tech-image {
+    filter: grayscale(0);
 }

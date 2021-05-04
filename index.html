@@ -303,6 +303,34 @@
                 </div>
             
             </section>
+            <section class="section-tech">
+                <div class="tech">
+                    <div class="tech-item html">
+                        <img class="tech-image" src="img/tech/html5 1.svg" alt="HTML" title="Язык гипертекстовой разметки">
+                    </div>
+                    <div class="tech-item css">
+                        <img class="tech-image" src="img/tech/css-logo 1.svg" alt="CSS" title="Каскадные таблицы стилей">
+                    </div>
+                    <div class="tech-item js">
+                        <img class="tech-image" src="img/tech/JavaScript.svg" alt="JS" title="Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам">
+                    </div>
+                    <div class="tech-item jquery">
+                        <img class="tech-image" src="img/tech/jquery.svg" alt="JQuery" title="Популярная библиотека JavaScript">
+                    </div>
+                    <div class="tech-item bootstrap">
+                        <img class="tech-image" src="img/tech/bootstrap 1.svg" alt="Bootstrap" title="Популярный CSS фреймворк">
+                    </div>
+                    <div class="tech-item php">
+                        <img class="tech-image" src="img/tech/php 1.svg" alt="Php" title="Серверный язык программирования">
+                    </div>
+                    <div class="tech-item vue">
+                        <img class="tech-image" src="img/tech/Vue.js_Logo_2 1.svg" alt="Vue" title="JS-фреймворк для создания пользовательских интерфейсов">
+                    </div>
+                    <div class="tech-item wordpress">
+                        <img class="tech-image" src="img/tech/Wordpress-Logo 1.svg" alt="Wordpress" title="Популярный CMS для создания блогов">
+                    </div>
+                </div>
+            </section>
         </div>
         <footer>
     
@@ -312,10 +340,16 @@
     <script src="script/jquery-ui.min.js"></script>
     <script>
         $( function() {
-          $( "#tabs" ).tabs({
-              active: 0
-          });
-        } );
+          $("#tabs").tabs({ active: 0});
+          $( document ).tooltip();
+        });
+        $("tech-image").tooltrip({
+            position: {
+                my:"center top",
+                at:"center bottom-10",
+                collision:"none"
+            }
+        });    
     </script>
 </body>
 </html>
