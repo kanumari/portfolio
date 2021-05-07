@@ -139,14 +139,14 @@ display: none;
     top: calc(50% - 12px);
 }
 .nav-social .nav-item:first-child::before {
-display: none;
+    display: none;
 }
 .nav-social .nav-item {
     padding-left: 28px;
     padding-right: 28px;
 }
 .nav-social .nav-item:last-child {
-    padding-right: 0px;
+    padding-right: 0;
 }
 .nav-social .nav-link {
     font-size: 16px;
@@ -602,6 +602,22 @@ padding-bottom: 60px;
     padding-top: 91px;
     padding-bottom: 92px;
 }
+.circle-form {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 40px;
+    top: 6326px;
+    z-index: 1;
+}
+.triangle-form {
+    position: absolute;
+    width: 62.34px;
+    height: 91.67px;
+    left: 15px;
+    top: 6370px;
+    z-index: 2;
+}
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -610,6 +626,9 @@ padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.nav-social .nav-item:first-child {
+    padding-left: 0;
 }
 .form-item {
     padding: 59px 0px 35px 0px;
@@ -620,7 +639,12 @@ padding-bottom: 60px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     border-bottom: 1px solid #F3F2F0;
+}
+.aboutproject {
+    position: relative;
     line-height: 150%;
+    font-size: 28px;
+    z-index: 3;
 }
 .form-description {
     font-size: 28px;
