@@ -249,10 +249,10 @@ display: none;
     top: calc(50% - 138px);
     z-index: 1;
 }
-.triangle {
+.triangle-main {
     position: absolute;
     left: -149px;
-    top: -22px;;
+    top: -22px;
     z-index: 2;  
 }
 .circle-nav {
@@ -725,26 +725,12 @@ padding-bottom: 60px;
     margin: 0;
 }
 .section-form {
+    position: relative;
     padding-top: 91px;
     padding-bottom: 92px;
 }
-.circle-form {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 228px;
-    top: 6331px;
-    z-index: 1;
-}
-.triangle-form {
-    position: absolute;
-    width: 62.34px;
-    height: 91.67px;
-    left: 206px;
-    top: 6376px;
-    z-index: 2;
-}
 .form {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -757,7 +743,7 @@ padding-bottom: 60px;
     padding-left: 0;
 }
 .dark .form-item {
-    padding: 56px 0px 35px 0px;
+    padding: 59px 0px 35px 0px;
     border-top: 1px solid #F3F2F0;
     z-index: 4;
 }
@@ -767,16 +753,14 @@ padding-bottom: 60px;
     z-index: 4;
 }
 .form-title {
+    position: relative;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.form-title .aboutproject {
-    position: relative;
-}
 .aboutproject {
-    position: relative;
+    position: absolute;
     line-height: 150%;
     font-size: 28px;
     z-index: 3;
@@ -786,6 +770,22 @@ padding-bottom: 60px;
     line-height: 150%;
     opacity: 0.8;
     padding-bottom: 34px;
+}
+.circle-form {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    left: -152px;
+    top: -4px;
+}
+.triangle-form {
+    position: absolute;
+    width: 62px;
+    height: 91px;
+    z-index: 2;
+    top: 45px;
+    left: -175px;
 }
 form {
     font-size: 12px;
