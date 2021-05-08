@@ -623,11 +623,18 @@ display: none;
 .tarif-title p {
     position: relative;
 }
-.tarif-description {
+.dark .tarif-description {
     font-size: 28px;
     line-height: 150%;
     opacity: 0.8;
     border-bottom: 1px solid #F3F2F0;
+    padding-bottom: 51px;
+}
+.light .tarif-description {
+    font-size: 28px;
+    line-height: 150%;
+    opacity: 0.8;
+    border-bottom: 1px solid #010101;
     padding-bottom: 51px;
 }
 .tarif-name {
@@ -837,16 +844,15 @@ form select {
     outline: none;
 }
 .ui-selectmenu-menu .ui-menu {
-background-color: #38383A;
-color: rgba(243, 242, 240, 0.4);
-font-size: 12px;
+    background-color: #E7E6E4;
+    color: rgba(1, 1, 1, 0.4);
+    font-size: 12px;
 }
-
 .ui-selectmenu-menu .ui-menu .ui-menu-item {
     padding: 10px 20px;
 }
 .ui-selectmenu-menu .ui-menu .ui-menu-item:hover {
-    color: rgba(243, 242, 240, 1);
+    color: #010101;
     padding: 10px 20px;
 }
 .ui-menu .ui-menu-item-wrapper {
