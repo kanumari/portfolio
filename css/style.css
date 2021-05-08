@@ -695,6 +695,18 @@ justify-content: space-between;
 padding-top: 33px;
 padding-bottom: 60px;
 }
+.dark .tarif-item:nth-child(7n) {
+    border-bottom: none;
+}
+.dark .tarif-item:last-child {
+    border-bottom: none;
+}
+.light .tarif-item:nth-child(7n) {
+    border-bottom: none;
+}
+.light .tarif-item:last-child {
+    border-bottom: none;
+}
 .light .tarif-item {
     border-bottom: 1px solid #010101;
     height: 270px;
@@ -720,16 +732,16 @@ padding-bottom: 60px;
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 40px;
-    top: 6326px;
+    left: 228px;
+    top: 6331px;
     z-index: 1;
 }
 .triangle-form {
     position: absolute;
     width: 62.34px;
     height: 91.67px;
-    left: 15px;
-    top: 6370px;
+    left: 206px;
+    top: 6376px;
     z-index: 2;
 }
 .form {
@@ -745,7 +757,7 @@ padding-bottom: 60px;
     padding-left: 0;
 }
 .dark .form-item {
-    padding: 59px 0px 35px 0px;
+    padding: 56px 0px 35px 0px;
     border-top: 1px solid #F3F2F0;
     z-index: 4;
 }
@@ -759,6 +771,9 @@ padding-bottom: 60px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.form-title .aboutproject {
+    position: relative;
 }
 .aboutproject {
     position: relative;
