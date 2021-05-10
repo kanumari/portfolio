@@ -30,7 +30,7 @@
             </header>
             <div class="header-mobile">
                 <a class="nav-link" href="tel:+79237777777">8 923 777-77-77</a>
-                <button class="menu"><img src="img/icons/burger.svg" alt="Menu"></button>
+                <button id="opener"class="menu"><img src="img/icons/burger.svg" alt="Menu"></button>
             </div>
             <img class="photo" src="img/image.png" alt="photo">
             <main>  
@@ -480,9 +480,10 @@
                </div>
            </footer>
         </div>
-        <footer>
-        </footer>
     </div>
+    <div id="dialog" title="Basic dialog">
+        <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+      </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script/jquery-ui.min.js"></script>
     <script>
@@ -490,7 +491,22 @@
             $("#tabs").tabs({ active: 0});
             $( document ).tooltip();
             $( "#communicate" ).selectmenu();
-            } );
+            $( "#dialog" ).dialog({
+             autoOpen: false,
+              show: {
+                 effect: "blind",
+                 duration: 1000
+             },
+              hide: {
+                 effect: "blind",
+                 duration: 1000
+             }
+             });
+
+              $( "#opener" ).on( "click", function() {
+              $( "#dialog" ).dialog( "open" );
+              });
+            });
             $( ".tech-image" ).tooltip({
                 position: {
                     my: "center top",
@@ -498,6 +514,6 @@
                     collision: "none"
                 }
             });
-</script>
+    </script>
 </body>
 </html>
